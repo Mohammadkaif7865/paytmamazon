@@ -118,7 +118,7 @@ app.post("/callback", (req, res) => {
           console.log(">>>>>".response)
           var _results = JSON.parse(response);
           /* where it will come back after payment*/
-          // https://amazonbymdkaif.netlify.app/details/46
+          // https://amazonbymdkaif.netlify.app
           // ! http://localhost:3000
           res.redirect(`https://amazonbymdkaif.netlify.app/viewBooking?status=${_results.STATUS}&ORDERID=${_results.ORDERID}&date=${_results.TXNDATE}&bank=${_results.BANKNAME}`)
         });
