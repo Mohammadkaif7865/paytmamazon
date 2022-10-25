@@ -41,7 +41,7 @@ app.post("/paynow", [parseUrl, parseJson], (req, res) => {
     params['CUST_ID'] = paymentDetails.customerId;
     params['TXN_AMOUNT'] = paymentDetails.amount;
     /* where is app is hosted (heroku url)*/
-    params['CALLBACK_URL'] = 'https://amazonpayment.herokuapp.com//callback';
+    params['CALLBACK_URL'] = 'https://amazonpayment.herokuapp.com/callback';
     params['EMAIL'] = paymentDetails.customerEmail;
     params['MOBILE_NO'] = paymentDetails.customerPhone;
 
